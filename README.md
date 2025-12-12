@@ -2,6 +2,7 @@
 
 Frontend application for the Task Manager project. Built with React (Vite) and TailwindCSS, the app provides a user-friendly interface to register, log in, and manage tasks (create, edit, delete, filter). It integrates with the TaskBackend API to persist tasks for authenticated users.
 
+https://task-frontend-pi-nine.vercel.app/
 ---
 
 ## ✨ Features
@@ -56,13 +57,16 @@ TaskFrontend/
 - AddTask / EditTask – Compose and update tasks
 
 ---
+##Diployed on Vercel
+
+https://task-frontend-pi-nine.vercel.app/
 
 ## Configuration / Backend Connection
 
 - Configure API base URL by creating a `.env` file at the project root with:
 
 ```
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://taskbackend-0ar2.onrender.com/api
 ```
 
 The app uses `src/utils/axiosInstance.js` to build requests. If `VITE_API_URL` is not set, it defaults to `http://localhost:5000/api`.
@@ -72,7 +76,7 @@ The app uses `src/utils/axiosInstance.js` to build requests. If `VITE_API_URL` i
 ## Run Locally
 
 ```bash
-# clone repo
+# git clone https://github.com/sudheeshna86/TaskFrontend.git 
 cd TaskFrontend
 npm install
 npm run dev
